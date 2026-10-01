@@ -1,0 +1,7 @@
+Top variable SE events: 344 / 3448
+Neurodegeneration gene set size: 19
+Top genes overlapping: 1
+Odds ratio: 5.910
+Fisher p-value: 0.27
+
+Interpretation: Not enriched (p>=0.05)

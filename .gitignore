@@ -1,0 +1,52 @@
+# CS638 Drosophila brain aging — ML_Ozgun
+# Never commit: secrets, credentials, tokens, private keys, large data.
+
+# Secrets / credentials
+*.pem
+*.key
+id_rsa*
+*token*
+*secret*
+*credential*
+.env
+
+# Large sequencing data (reproducible via scripts/02_download/)
+data/raw/
+data/reference/*.fa
+data/reference/*.fa.gz
+data/reference/star_index/
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.sra
+*.sralite
+
+# rMATS temp dirs
+data/intermediate/rmats_tmp/
+data/intermediate/starsolo/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# R
+.Rhistory
+.RData
+
+# OS / editors
+.DS_Store
+*.swp
+*~
+
+# Logs (keep scripts, not massive logs)
+logs/*.log
+
+# Keep these (small, processed):
+#  metadata/, docs/, scripts/, results/ (small tables), figures/, report/, environment.yml
+!results/**/*.csv
+!figures/**
+*.gtf
+*.log
